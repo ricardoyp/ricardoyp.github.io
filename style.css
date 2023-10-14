@@ -1,0 +1,78 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin: 0%;
+}
+
+h3{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+p{
+    font-size: 20px;
+}
+
+#barraIzq {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; 
+}
+
+#principal {
+    background-image: url('/Users/ricardo/Desktop/Portfolio - Proyecto Ramp Up/img/fondo_principal.jpeg');
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 4;
+}
+
+.clickMe{
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px; 
+    color: black;
+    border-radius: 7%;  
+    font-weight: bold;    
+    font-size: 18px;
+}
+.clickMe:hover{
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px; 
+    background-color: rgb(207, 19, 19);
+    border-radius: 7%;
+    
+}
+
+td {
+    text-align: center; 
+    padding: 12px;
+}
+
+a {
+    text-decoration: none; /* quita el subrayado del enlace */
+}
+
+@media (max-width: 650px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+}

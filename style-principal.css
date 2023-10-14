@@ -1,0 +1,160 @@
+*{
+    font-family: monospace;
+    /* color: rgb(0, 0, 0); */
+    /* background-color: #000000; */
+    /* border: 1px black solid; */
+}
+
+p{
+    font-size: 14px;
+
+}
+
+.main{
+    display: flex;
+    gap: 10px;
+}
+
+aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2,h3{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    font-size: 30px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.primeraCaja{
+    display: flex;
+    padding: 20px ;
+    gap: 50px;
+
+}
+
+.primeraCaja1{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.primeraCaja2{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+.foto{
+    flex: 1;
+    display: flex;
+    max-height: 90px;
+    max-width: 90px;
+    border: 2px solid #000000;
+    overflow: hidden; /* Oculta el desbordamiento de la imagen */
+
+    transition: all 1s;
+
+}
+
+.foto img {
+    height: 100%;
+    width: 100%;
+    display: block; /* Elimina espacio adicional debajo de las imágenes */
+}
+
+.foto:hover {
+    transform: scale(1.5);
+}
+
+.segundaCaja {
+    display: flex;
+    gap: 20px;
+}
+
+.centrarContenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centrarContenido p{
+    padding: 0 10px;
+}
+
+.terceraCaja {
+    height: 50px; 
+    border: 3px solid #cbcbcb; 
+    padding: 20px; 
+    margin: 20px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+
+    display: flex;
+    justify-content:space-around;
+    gap: 20px;
+}
+
+
+.circulo{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: alias;
+}
+
+#verde{
+    background-color: #adff2f;
+    border-color: #ffffff;
+}
+#rojo{
+    background-color: #a90000;
+    border-color: #ffffff;
+}
+#amarillo{
+    background-color: #F7F731;
+    border-color: #ffffff;
+}
+#azul{
+    background-color: #00ffe1;
+    border-color: #ffffff;
+}
+#morado{
+    background-color: #8600c8;
+    border-color: #ffffff;
+}
+
+@media screen and (max-width: 650px) 
+{    
+    .primeraCaja{
+        display: flex;
+        flex-direction: column;
+    }
+    .primeraCaja1{
+        display: flex;
+        justify-content: space-around;
+    }
+    .segundaCaja{
+        display: flex;
+        flex-direction: column;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .aside{
+        display: flex;
+        align-items: center;
+    }
+
+
+}
